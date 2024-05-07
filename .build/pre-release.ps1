@@ -1,6 +1,3 @@
-"//registry.npmjs.org/:_authToken=$env:NPM_TOKEN`n" | out-file "$env:userprofile\.npmrc" -Encoding ASCII
-npm whoami
-
 $timestamp = Get-Date -Format yyyyMMddhhmmss
 $patchVersion = (npm --no-git-tag version patch)
 $nextVersion = "${patchVersion}-next.${timestamp}".Substring(1)

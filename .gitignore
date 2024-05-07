@@ -6,3 +6,4 @@ prebuilds/
 .cache
 cmake-build-debug
 .DS_Store
+.npmrc
